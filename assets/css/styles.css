@@ -37,10 +37,19 @@ nav {
 .index main {
     color: 4a4a4a;
 }
+
 .index main h1 {
     font-size: 72px;
     font-weight: 800;
     margin-top: 4rem;
+}
+
+.index main h3 {
+    height: 10vh;
+}
+
+.index main p {
+    height: 20vh;
 }
 
 .body .index {
@@ -49,10 +58,20 @@ nav {
     flex-direction: column;
 }
 
-.index main {
-    flex: 1;
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.index footer {
-    margin-top: 10rem;
+main {
+    min-height: 80vh;
+}
+
+nav {
+    height: 15vh;
+}
+
+footer {
+    height: 5vh;
 }
