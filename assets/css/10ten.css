@@ -1,0 +1,74 @@
+/* Layout */
+nav { height: 12vh; }
+main { min-height: 78vh; }
+footer { height: 8vh; }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-10 {
+  margin-bottom: 10em;
+}
+
+/* Responsive nav */
+@media only screen and (min-width: 1024px) {
+  nav img { margin-right: 8rem; }
+  nav .btn { margin-left: 8rem; }
+  nav a { margin: 0 2rem; }
+}
+@media only screen and (max-width: 1024px) {
+  nav a {
+    display: inline-block;
+    margin: 1em;
+  }
+}
+
+/* Font */
+body { font-family: Sans-Serif; }
+.font-serif { font-family: Georgia, "Times New Roman", Times, serif; }
+.fw-bold { font-weight: bold; }
+.uppercase { text-transform: uppercase; }
+.text-center { text-align: center; }
+
+/* Link */
+a, a:link, a:visited, a:hover { text-decoration: none; }
+a:link { color: #333; }
+a:visited { color: #333; }
+a:active { font-weight: bold; }
+
+.btn {
+    border-width: 2px;
+    border-style: solid;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.btn:active{
+    padding-top: 14px;
+    padding-bottom: 18px;
+}
+
+.btn.btn-primary {
+    background-color: #ff4faa;
+    border-color: #ff4faa;
+    color: white;
+}
+
+.btn.btn-primary:hover {
+    background-color: #de4392;
+    border-color: #de4392;
+}
+
+.btn.btn-outline-primary {
+    color: #ff4faa;
+    border-color: #ff4faa;
+}
+
+.btn.btn-outline-primary:hover {
+    color: white;
+    background-color: #ff4faa;
+    border-color: #ff4faa;
+}
