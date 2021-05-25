@@ -101,16 +101,26 @@ h5 {
 }
 
 
-/* Header */
+/* Headers */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-howitworks3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     background-size: cover;
     background-position: top;
+    width: 100%;
     height: 65vh;
     margin-top: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
     
 }
+
+.hero-how-it-works {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-howitworks3.jpeg);
+}
+
+.hero-become-an-instructor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/cool-tech-team.jpeg);
+}
+
 
 .hero-text-box{
     position: absolute;
