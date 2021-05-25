@@ -13,6 +13,7 @@ main { min-height: 80vh; }
 }
 
 .mb-10 { margin-bottom: 10em; }
+.mt-5 { margin-top: 5em; }
 .mt-2 { margin-top: 2em; }
 
 /* Reusable components */
@@ -74,7 +75,7 @@ h3:after {
 
 h4 {
     color:#444;
-    font-size: 120%;
+    font-size: 125%;
     word-spacing: 2px;
     margin-bottom: 30px;
     text-align: center;
