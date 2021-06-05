@@ -7,6 +7,8 @@
 body {
     margin-right: 0;
     margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 main { min-height: 80vh; }
@@ -18,6 +20,9 @@ main { min-height: 80vh; }
 }
 
 .mb-10 { margin-bottom: 10em; }
+.mb-5 { margin-bottom: 5em; }
+.mb-2 { margin-bottom: 2em; }
+.mt-10 { margin-top: 10em; }
 .mt-5 { margin-top: 5em; }
 .mt-2 { margin-top: 2em; }
 
@@ -102,10 +107,32 @@ h5 {
     line-height: 145%;
 }
 
+/* Icons */
+.icon-big {
+    display: block;
+    font-size: 350%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.icon-medium {
+    display: block;
+    font-size: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 50px;
+}
+
+
+.icon-small {
+    color: #ff4faa;
+    align-items:baseline;
+    margin-right: 5%;
+}
 
 /* Headers */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-attachment: fixed;
     background-size: cover;
     background-position: top;
     width: 100%;
@@ -118,6 +145,8 @@ header {
 .hero-how-it-works {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-howitworks3.jpeg);
 }
+
+
 
 .hero-become-an-instructor {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cool-tech-team.jpeg);
@@ -179,3 +208,56 @@ a:active { font-weight: bold; }
     background-color: #ff4faa;
     border-color: #ff4faa;
 }
+
+
+/* Footer */
+footer {
+    background-color:#ff4faa;
+    padding: 5px;
+    font-size: 90%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-media-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-media-links li  {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer-nav li:last-child,
+.social-media-links li:last-child {
+    margin-right: 50px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-media-links li a:link,
+.social-media-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color:black;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: white;
+    
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
