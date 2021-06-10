@@ -1,0 +1,34 @@
+.become_instructor .title {
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #444;
+}
+
+.become_instructor .subtitle {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #444;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.become_instructor .body-text {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #444;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    text-align: left;
+}
+
+.become_instructor .hero-text {
+    font-size: 3em;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #fff;
+    
+}
