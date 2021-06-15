@@ -23,3 +23,12 @@
     margin-right: 5em;
     text-align: left;
 }
+
+.about .hero-text {
+    font-size: 3em;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #fff;
+    
+}
