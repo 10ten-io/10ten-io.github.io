@@ -1,3 +1,7 @@
+/* Basic setup */
+
+
+
 /* Layout */
 
 *{
@@ -9,6 +13,8 @@ body {
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 0;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 main { min-height: 80vh; }
@@ -142,10 +148,16 @@ header {
     
 }
 
+.hero-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/tech-celebration.jpeg);
+    background-size:contain;
+    background-position: top;
+}
+
+
 .hero-how-it-works {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-howitworks3.jpeg);
 }
-
 
 
 .hero-become-an-instructor {
