@@ -1,4 +1,4 @@
-// Publishes all html files in templates/*.html to public/*.html.
+// Publishes all html files in templates/*.html to docs/*.html.
 // Place root files in `templates/` and partial files in subfolders, for example `templates/layouts`.
 //
 // Features:
@@ -8,10 +8,10 @@
 // - text.yml data with `{{ any yaml key }}` on any file
 // - text.yml attributes with `<put src="any yaml key" foo="bar">` on any file, then use `{{ foo }}` inside the yaml value to output `bar`
 //
-// Creates one html file in public/ for each html file in templates/ that doesn't start with `_`.
+// Creates one html file in docs/ for each html file in templates/ that doesn't start with `_`.
 // Supports markdown partials.
 //
-// Run `npm install`, then you can `node publish.js` and inspect public/ files.
+// Run `npm install`, then you can `node publish.js` and inspect docs/ files.
 
 const fs = require('fs');
 const parser = require('node-html-parser');
@@ -22,7 +22,7 @@ const markdown = new showdown.Converter();
 
 // config
 const inputPath = __dirname + '/templates/';
-const outputPath = __dirname + '/public/';
+const outputPath = __dirname + '/docs/';
 const dictionary = yaml.load(maybeReadFile(__dirname + '/text.yml')) || {};
 const inputFilenameRegex = new RegExp('\.html$');
 
