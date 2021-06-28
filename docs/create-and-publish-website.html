@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/10ten.css" rel="stylesheet">
+  <link href="assets/css/index.css" rel="stylesheet">
+  <link href="assets/css/grid.css" rel="stylesheet">
+  <link href="assets/css/queries.css" rel="stylesheet">
+  <title>10ten | tech for everyone</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body class="index">
+  <nav>
+    <div class="container uppercase text-center">
+      <div class="navbar-links fw-bold">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="logo" width="150">
+        </a>
+        <a href="about.html">About</a>
+        <a href="howitworks.html">How it Works</a>
+        <a href="programs.html">Tech Tracks®</a>
+        <a href="become_instructor.html" class="btn btn-outline-primary">
+          Become an Instructor
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="markdown-lecture mb-5 mt-5">
+    <div class="row">
+      <p>Hello, I'm Alex and I will teach you how to quickly create your first website.</p>
+      <p>Before we start, make sure you have a <a href="https://github.com">GitHub</a> account and <a href="https://code.visualstudio.com">Visual Studio Code</a> installed. On Windows, you also need to install Git. Most of other Operational Systems have it by default.</p>
+      <p><strong>In minutes, you will create and publish your first page on the internet.</strong></p>
+      <h2 id="create">Create</h2>
+      <p>First, let's understand what a website is in it's most basic form: an HTML file with text inside.</p>
+      <p>Open VSCode and click on <img src="assets/images/lectures/open.png" alt="Open…" width="80">. Use the <code>Open</code> dialog to create a folder <code>Dev</code> on your user folder, and inside it create another folder named <code>website</code>. Open it. Use the VSCode file explorer to create a file named <code>index.html</code> inside <code>Dev/website/</code>. Write <code>Hello, I'm Alex</code> on it and save. Of course, you should change by your name.</p>
+      <p>Now, open it with your browser. YAY! That's your first website.</p>
+      <p>
+        <center><iframe src="https://giphy.com/embed/75ZaxapnyMp2w" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          <p>source: <a href="https://giphy.com/gifs/75ZaxapnyMp2w">GIPHY</a></p>
+        </center>
+      </p>
+      <p>Essentially, a website is an HTML file, that can be opened by browsers. Just like images can be opened by image editors, PDF files can be opened by PDF viewers, mp3 files can be opened by music players, and the list goes on. HTML files can be opened by browsers.</p>
+      <p>Let's take a minute to review our actions:</p>
+      <ol>
+        <li><strong>Create and open a folder</strong></li>
+        <li><strong>Create and open a file</strong></li>
+      </ol>
+      <p>It's important that you get used to this and memorize VSCode shortcuts to do it easily. As a software developer, managing files will take a huge part of your time.</p>
+      <p>On VSCode, to open something hold <code>control</code> on Linux/Windows, or <code>command</code> on OSX and press the key <code>o</code>. To toggle the file explorer, press <code>(ctrl or cmd) + shift + e</code> and release, to save current file use <code>(ctrl or cmd) + s</code>, to toggle the terminal press <code>ctrl + `</code> keys. Memorize the shortcuts for the menu options you click the most!</p>
+      <h2 id="publish">Publish</h2>
+      <p>Problem: only you can see this file/website, because it is in your computer. To show this to your friends we will need to put it in a public machine, for example a GitHub server.</p>
+      <p>GitHub is a development platform that can store our files and serve them to the browser via <code>username.github.io</code> address. And much more that we will explore later.</p>
+      <p>To start, navigate to <a href="https://github.com">GitHub.com</a>, login and create a new repository to store the website files. Give it this name: <code>username.github.io</code>, changing <code>username</code> by your username in GitHub.</p>
+      <p>To send local files to GitHub we need Git, which is a terminal application shipped with OSX computers and most linux distributions. So you probably already have it, but if you don't, checkout the pre-work notes.</p>
+      <p>Git is used everyday by pretty much every developer in the world, so you better start using it. Good news is that we only need 5 commands today. You will write (or copy-paste) on a terminal running inside the same folder as <code>index.html</code>.</p>
+      <p>To open a terminal on the current folder in VSCode, open the file explorer - <code>(cmd or ctrl) + shift + e</code> - right click on current file and click on <code>Open in Integrated Terminal</code>.</p>
+      <p>Only the first time when you create a new repository, you need to open a terminal on the <code>index.html</code> folder and run:</p>
+      <pre><code>git init .
+</code></pre>
+      <p>It initializes a local Git repository. Now, change <code>username</code> by your own GitHub username and run:</p>
+      <pre><code>git remote add origin git@github.com:username/username.github.io.git
+</code></pre>
+      <p>It links a GitHub remote repository to your local repository, so that you can exchange files between. It's a common convention to call it <code>origin</code> and we will use this name when we need to push changes.</p>
+      <p>Now, every time you need to send changes to your website, you can:</p>
+      <table>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>git add index.html</td>
+          <td>add files/changes to send to the remote repository</td>
+        </tr>
+        <tr>
+          <td>git commit -m "nice description of the changes"</td>
+          <td>group all changes with a nice description</td>
+        </tr>
+        <tr>
+          <td>git push origin main</td>
+          <td>push local commits to the remote <em>origin</em> on <em>main</em> branch</td>
+        </tr>
+      </table>
+      <p><br></p>
+      <p>If it asks for a username and password, type your GitHub username and password, and check the pre-work notes to learn how to stay authenticated with GitHub so that you don't have to type credentials every time you push changes.</p>
+      <p>Get used to those 3 commands, we will use them every day, just like every developer in the world!</p>
+      <p>If you followed those steps and didn't get any error, you should be able to see the index page on <code>username.github.io</code> after some seconds.</p>
+      <p><strong>Take this moment to admire your accomplishment.</strong></p>
+      <p>Next we will learn how to add more elements and styles to your web page…</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2">
+        <ul class="footer-nav">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-media-links">
+          <li><a href="#"><img width="20" src="assets/icons/facebook.png" alt="facebook"></a>
+          </li>
+          <li><a href="#"><img width="20" src="assets/icons/instagram.png" alt="instagram"></a>
+          </li>
+          <li><a href="#"><img width="20" src="assets/icons/twitter.png" alt="twitter"></a>
+          </li>
+          <li><a href="#"><img width="20" src="assets/icons/youtube.png" alt="youtube"></a>
+          </li>
+          <li><a href="#"><img width="20" src="assets/icons/linkedin.png" alt="linkedin"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p class="font-serif">
+        Made with love &#9825 in this world &#x1F310<br>
+        Copyright&copy; 2021. All rights reserved by 10ten.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
