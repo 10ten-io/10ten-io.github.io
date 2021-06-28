@@ -17,7 +17,7 @@ body {
     overflow-x: hidden;
 }
 
-main { min-height: 80vh; }
+main { min-height: 72vh; }
 
 .flex-center {
     display: flex;
