@@ -132,6 +132,22 @@
             </p>
         </div>
     </footer>
+
+  <script>
+    (function() {
+      const widgetDiv = document.createElement('div');
+      widgetDiv.id = 'widget';
+      document.body.appendChild(widgetDiv);      
+      const script = document.createElement('script');
+      script.src = 'https://api.10ten.io/widget';
+      script.async = true;
+      document.body.appendChild(script);
+      window.onunload = function() {
+          document.body.removeChild(script);
+      };
+    })();
+  </script>
+    
 </body>
 
 </html>
